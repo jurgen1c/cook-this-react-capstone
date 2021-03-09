@@ -1,5 +1,6 @@
 const initialFilterState = {
   current: 'All',
+  list: 'All filters go here'
 };
 
 const filterReducer = (state = initialFilterState, action) => {
