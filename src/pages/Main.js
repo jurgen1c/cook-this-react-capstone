@@ -1,7 +1,9 @@
+import RecipeList from "../components/recipeList/RecipeList"
+
 const Main = () => {
   return (
     <div>
-      
+      <RecipeList />
     </div>
   )
 }
