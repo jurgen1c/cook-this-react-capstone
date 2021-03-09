@@ -1,3 +1,5 @@
+import './recipeList.css'
+
 const RecipeList = () => {
   return (
     <div>
