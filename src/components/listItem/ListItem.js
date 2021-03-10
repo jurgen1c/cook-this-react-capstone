@@ -6,12 +6,12 @@ const ListItem = ({ meal, dispatch }) => {
   const handleChoice = () => {
     getSingleRecipe(meal.idMeal, dispatch);
   };
+
   return (
     <div className="list-item">
       <img src={meal.strMealThumb} alt="meal-thumb" style={{ width: '50px', height: '50px' }} />
       <div>
         <h2>{meal.strMeal}</h2>
-        <button type="button">Add To Favorites</button>
         <Link to={`/${meal.strMeal.toLowerCase()}`} onClick={handleChoice}> Start Cooking</Link>
       </div>
     </div>

@@ -17,10 +17,6 @@ const RecipeList = () => {
       .then(setLoaded(true));
   }, [current]);
 
-  const handleClick = () => {
-    getRecipes('Seafood', dispatch);
-  };
-
   const handleChange = ({ target: { value } }) => {
     dispatch(filterRecipes(value));
   };
@@ -29,10 +25,12 @@ const RecipeList = () => {
     <div>
       <h1>Welcome to cook this!</h1>
       <h3>First choose the type of meal you want to prepare</h3>
-      <select name="chooseType" id="choose-T" onChange={handleChange}>
-        {categories.map(item => <option key={`${item.strCategory}_${Math.random() * 100}`} value={item.strCategory}>{item.strCategory}</option>)}
+      <select name="categories" onChange={handleChange}>
+        <option selected disabled>Select a category</option>
+        {categories.map(item => <option key={`${item.strCategory}_option`} value={item.strCategory}>{item.strCategory}</option>)}
       </select>
-      {loaded ? list.map(item => <ListItem key={`${item.strMeal}_${Math.random() * 100}`} meal={item} dispatch={dispatch} handleClick={handleClick} />) : <Loading /> }
+      <h2>{`All meals for ${current}`}</h2>
+      {loaded ? list.map(item => <ListItem key={`${item.strMeal}_${Math.random() * 100}`} meal={item} dispatch={dispatch} />) : <Loading /> }
     </div>
   );
 };
