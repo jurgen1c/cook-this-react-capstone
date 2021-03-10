@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +11,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(255, 239, 224);
 }
 
 code {
@@ -14,4 +21,14 @@ code {
 
 .flex {
   display: flex;
+}
+
+.recipe-list {
+  padding: 1rem 0;
+  width: 100%;
+  background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255)),
+    url('assets/images/background.jpg');
+  background-size: cover;
+  background-position: center;
 }
