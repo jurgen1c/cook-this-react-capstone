@@ -3,10 +3,11 @@ import './navbar.css';
 
 const Navbar = () => (
   <div className="navbar">
-    <div>
-      <img src="" alt="Logo" />
-      <Link to="/">Home</Link>
+    <div className="flex">
+      <img src="/images/logo.jpg" alt="Logo" />
+      <h2>Cook this!</h2>
     </div>
+    <Link to="/" className="nav-link">Home</Link>
   </div>
 );
 

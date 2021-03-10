@@ -26,7 +26,7 @@ const RecipeList = () => {
     <div>
       <h1>Welcome to cook this!</h1>
       <h3>First choose the type of meal you want to prepare</h3>
-      <CategoryFilter  categories={categories} handleChange={handleChange}/>
+      <CategoryFilter categories={categories} handleChange={handleChange} />
       <h2>{`All meals for ${current}`}</h2>
       {loaded ? list.map(item => <ListItem key={`${item.strMeal}_${Math.random() * 100}`} meal={item} dispatch={dispatch} />) : <Loading /> }
     </div>

@@ -1,0 +1,33 @@
+.navbar {
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgb(60, 100, 231);
+}
+
+.navbar div {
+  align-items: center;
+}
+
+.navbar div img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 0 .5rem;
+}
+
+.navbar div h2 {
+  font-size: 2rem;
+  color: rgb(255, 239, 224);
+}
+
+.nav-link {
+  padding: 1rem;
+  height: fit-content;
+  color: black;
+  text-decoration: none;
+  background: rgb(255, 239, 224);
+  border-radius: 10px;
+}
