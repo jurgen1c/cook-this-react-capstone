@@ -27,19 +27,21 @@ const RecipeItem = () => {
   return (
     recipe !== null ? (
       <div>
+        <h1>{recipe.strMeal}</h1>
         <div className="recipe-header flex">
           <img src={recipe.strMealThumb} alt="" />
           <div>
-            <h2>{recipe.strMeal}</h2>
             <h5>{`Area: ${recipe.strArea}`}</h5>
             <h5>{`Category: ${recipe.strCategory}`}</h5>
-          </div>
-          <div className="flex">
-            <div>
-              {ingredients().map(item => <p key={item}>{item}</p>)}
-            </div>
-            <div>
-              {measurements().map(item => <p key={item}>{item}</p>)}
+            <div className="flex">
+              <div>
+                <h3>Ingredients</h3>
+                {ingredients().map(item => <p key={item}>{item}</p>)}
+              </div>
+              <div>
+                <h3>Measurements</h3>
+                {measurements().map(item => <p key={item}>{item}</p>)}
+              </div>
             </div>
           </div>
         </div>

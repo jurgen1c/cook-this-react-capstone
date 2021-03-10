@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { getSingleRecipe } from '../../actions';
+import './listItem.css'
 
 const ListItem = ({ meal, dispatch }) => {
   const handleChoice = () => {

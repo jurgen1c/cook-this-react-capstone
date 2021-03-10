@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import filterRecipes, { getRecipes } from '../../actions';
+import CategoryFilter from '../categoryFilter/CategoryFilter';
 import ListItem from '../listItem/ListItem';
 import Loading from '../loading/Loading';
 import './recipeList.css';
@@ -25,10 +26,7 @@ const RecipeList = () => {
     <div>
       <h1>Welcome to cook this!</h1>
       <h3>First choose the type of meal you want to prepare</h3>
-      <select name="categories" onChange={handleChange}>
-        <option selected disabled>Select a category</option>
-        {categories.map(item => <option key={`${item.strCategory}_option`} value={item.strCategory}>{item.strCategory}</option>)}
-      </select>
+      <CategoryFilter  categories={categories} handleChange={handleChange}/>
       <h2>{`All meals for ${current}`}</h2>
       {loaded ? list.map(item => <ListItem key={`${item.strMeal}_${Math.random() * 100}`} meal={item} dispatch={dispatch} />) : <Loading /> }
     </div>
