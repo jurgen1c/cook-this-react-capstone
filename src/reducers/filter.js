@@ -1,6 +1,6 @@
 const initialFilterState = {
-  current: 'All',
-  list: 'All filters go here'
+  current: 'Random',
+  list: [],
 };
 
 const filterReducer = (state = initialFilterState, action) => {
@@ -13,6 +13,11 @@ const filterReducer = (state = initialFilterState, action) => {
         current,
       };
       return result; }
+    case 'SET_FILTERS':
+      return {
+        ...state,
+        list: action.payload,
+      };
     default:
       return state;
   }

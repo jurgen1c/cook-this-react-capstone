@@ -1,11 +1,9 @@
-import RecipeItem from "../components/recipe/RecipeItem"
+import RecipeItem from '../components/recipe/RecipeItem';
 
-const Recipe = () => {
-  return (
-    <div>
-      <RecipeItem />
-    </div>
-  )
-}
+const Recipe = () => (
+  <div>
+    <RecipeItem />
+  </div>
+);
 
-export default Recipe
+export default Recipe;

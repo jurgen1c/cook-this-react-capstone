@@ -1,11 +1,9 @@
-import RecipeList from "../components/recipeList/RecipeList"
+import RecipeList from '../components/recipeList/RecipeList';
 
-const Main = () => {
-  return (
-    <div>
-      <RecipeList />
-    </div>
-  )
-}
+const Main = () => (
+  <div>
+    <RecipeList />
+  </div>
+);
 
-export default Main
+export default Main;
