@@ -1,5 +1,5 @@
 const initialFilterState = {
-  current: 'Random',
+  current: 'Beef',
   list: [],
 };
 

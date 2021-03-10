@@ -1,5 +1,6 @@
 const initialRecipeState = {
   recipes: ['Loading'],
+  active: null,
 };
 
 const recipeReducer = (state = initialRecipeState, action) => {
@@ -9,6 +10,11 @@ const recipeReducer = (state = initialRecipeState, action) => {
         ...state,
         recipes: action.payload,
       };
+    case 'SET_ACTIVE':
+      return {
+        ...state,
+        active: action.payload,
+      }
     default:
       return state;
   }

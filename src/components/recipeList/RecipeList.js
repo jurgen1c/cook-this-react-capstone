@@ -1,23 +1,24 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { getRecipes } from '../../actions';
+import filterRecipes, { getRecipes } from '../../actions';
 import ListItem from '../listItem/ListItem';
 import './recipeList.css';
 
 const RecipeList = () => {
   const list = useSelector(state => state.recipeList.recipes);
   const categories = useSelector(state => state.filter.list);
+  const current = useSelector(state => state.filter.current);
   const dispatch = useDispatch();
   useEffect(() => {
-    getRecipes('Beef', dispatch);
-  }, []);
+    getRecipes(current, dispatch);
+  }, [current]);
 
   const handleClick = () => {
     getRecipes('Seafood', dispatch);
   };
 
   const handleChange = ({ target: { value } }) => {
-    getRecipes(value, dispatch);
+    dispatch(filterRecipes(value))
   };
 
   return (
