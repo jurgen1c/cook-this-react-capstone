@@ -17,12 +17,11 @@ export const setRecipeList = list => ({
 
 const setActiveRecipe = recipe => ({
   type: 'SET_ACTIVE',
-  payload: recipe
-})
+  payload: recipe,
+});
 
 export const getRecipes = async (cat, hook) => {
   const list = await getDataFromApi(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${cat}`);
-  console.log(list);
   hook(setRecipeList(list.meals));
 };
 
@@ -33,7 +32,7 @@ export const getCategories = async hook => {
 
 export const getSingleRecipe = async (id, hook) => {
   const item = await getDataFromApi(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`);
-  hook(setActiveRecipe(item));
-}
+  hook(setActiveRecipe(item.meals[0]));
+};
 
 export default filterRecipes;

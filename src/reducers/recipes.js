@@ -1,5 +1,5 @@
 const initialRecipeState = {
-  recipes: ['Loading'],
+  recipes: [],
   active: null,
 };
 
@@ -14,7 +14,7 @@ const recipeReducer = (state = initialRecipeState, action) => {
       return {
         ...state,
         active: action.payload,
-      }
+      };
     default:
       return state;
   }

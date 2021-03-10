@@ -4,5 +4,4 @@ const getDataFromApi = async url => {
   return data;
 };
 
-
 export default getDataFromApi;

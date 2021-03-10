@@ -17,7 +17,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Main} />
-        <Route path="/:id" component={Recipe} />
+        <Route path="/:name" component={Recipe} />
       </Switch>
     </BrowserRouter>
   );
