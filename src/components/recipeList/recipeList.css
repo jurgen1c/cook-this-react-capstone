@@ -2,9 +2,9 @@
   text-align: center;
   width: 90%;
   border-radius: 10px;
-  padding: .5rem;
+  padding: 0.5rem;
   margin: 0  auto;
-  background-color: rgba(235, 235, 235, 0.15);  
+  background-color: rgba(235, 235, 235, 0.15);
   backdrop-filter: blur(7px);
   box-shadow: 5px 5px 10px rgb(48, 48, 48);
 }
@@ -28,7 +28,7 @@
   margin: 1rem auto;
   padding: 1rem;
   border-radius: 10px;
-  background-color: rgba(235, 235, 235, 0.15);  
+  background-color: rgba(235, 235, 235, 0.15);
   backdrop-filter: blur(7px);
   box-shadow: 5px 5px 10px rgb(48, 48, 48);
 }

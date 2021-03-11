@@ -9,14 +9,14 @@
 }
 
 .recipe-header {
-  padding: .5rem;
-  height: fit-content;
+  padding: 0.5rem;
+  height: auto;
 }
 
 .recipe-header img {
   width: 35em;
   height: 35em;
-  margin: .5rem 1rem;
+  margin: 0.5rem 1rem;
   border-radius: 10px;
 }
 
@@ -34,8 +34,8 @@
   justify-content: space-between;
   align-items: center;
   width: 50%;
-  height: fit-content;
-  margin: .5rem 1.5rem;
+  height: auto;
+  margin: 0.5rem 1.5rem;
   background: whitesmoke;
   border: 1px solid rgba(12, 29, 85, 0.445);
   border-radius: 10px;
@@ -49,7 +49,7 @@
 
 .list-wrap p {
   font-size: 1.3rem;
-  margin: .5rem;
+  margin: 0.5rem;
   width: 100%;
 }
 
