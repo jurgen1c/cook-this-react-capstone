@@ -23,10 +23,12 @@
 .recipe-header h5 {
   font-size: 2rem;
   display: inline;
-  margin: 1rem;
+  margin: 2rem 0 2rem 3.5rem;
+  color: rgb(19, 36, 94);
 }
 
 .list-wrap {
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -34,11 +36,15 @@
   width: 50%;
   height: fit-content;
   margin: .5rem 1.5rem;
+  background: whitesmoke;
+  border: 1px solid rgba(12, 29, 85, 0.445);
+  border-radius: 10px;
 }
 
 .list-wrap h3 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: rgb(19, 36, 94);
 }
 
 .list-wrap p {

@@ -8,7 +8,7 @@ const RecipeItem = () => {
   const ingredients = () => {
     const temp = [];
     Object.keys(recipe).forEach(e => {
-      if (e.includes('strIngredient') && recipe[e] !== '') {
+      if (e.includes('strIngredient') && recipe[e] !== '' && recipe[e] !== null) {
         temp.push(recipe[e]);
       }
     });
@@ -17,7 +17,7 @@ const RecipeItem = () => {
   const measurements = () => {
     const temp = [];
     Object.keys(recipe).forEach(e => {
-      if (e.includes('strMeasure') && recipe[e] !== '') {
+      if (e.includes('strMeasure') && recipe[e] !== '' && recipe[e] !== null) {
         temp.push(recipe[e]);
       }
     });
@@ -35,11 +35,11 @@ const RecipeItem = () => {
             <div className="flex">
               <div className="list-wrap">
                 <h3>Ingredients</h3>
-                {ingredients().map(item => <p key={`${item}_ing`}>{item}</p>)}
+                {ingredients().map(item => <p key={`${item}_${Math.random() * 100}`}>{item}</p>)}
               </div>
               <div className="list-wrap">
                 <h3>Measurements</h3>
-                {measurements().map(item => <p key={`${item}_measure`}>{item}</p>)}
+                {measurements().map(item => <p key={`${item}_${Math.random() * 100}`}>{item}</p>)}
               </div>
             </div>
           </div>

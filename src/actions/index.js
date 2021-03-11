@@ -5,12 +5,12 @@ const filterRecipes = filter => ({
   payload: filter,
 });
 
-export const setFilters = filters => ({
+const setFilters = filters => ({
   type: 'SET_FILTERS',
   payload: filters,
 });
 
-export const setRecipeList = list => ({
+const setRecipeList = list => ({
   type: 'SET_RECIPES',
   payload: list,
 });
