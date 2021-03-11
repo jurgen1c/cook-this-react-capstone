@@ -34,18 +34,18 @@ const RecipeItem = () => {
             <h5>{`Area: ${recipe.strArea}`}</h5>
             <h5>{`Category: ${recipe.strCategory}`}</h5>
             <div className="flex">
-              <div>
+              <div className="list-wrap">
                 <h3>Ingredients</h3>
                 {ingredients().map(item => <p key={item}>{item}</p>)}
               </div>
-              <div>
+              <div className="list-wrap">
                 <h3>Measurements</h3>
                 {measurements().map(item => <p key={item}>{item}</p>)}
               </div>
             </div>
           </div>
         </div>
-        <div>
+        <div className="inst-wrap">
           <iframe src={`https://www.youtube.com/embed/${ytLink()[1]}`} frameBorder="0" title={recipe.strMeal} allowFullScreen />
           <p>{recipe.strInstructions}</p>
           <a href={recipe.strSource} target="_blank" rel="noreferrer">Source</a>

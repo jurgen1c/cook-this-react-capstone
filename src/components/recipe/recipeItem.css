@@ -4,5 +4,23 @@
 
 .recipe-cont h1 {
   font-size: 3rem;
+  margin: 1rem 0;
   color: rgb(19, 36, 94);
+}
+
+.recipe-header {
+  padding: .5rem;
+}
+
+.recipe-header img {
+  width: 35em;
+  height: 35em;
+  margin: .5rem 1rem;
+  border-radius: 10px;
+}
+
+.recipe-header h5 {
+  font-size: 2rem;
+  display: inline;
+  margin: 1rem;
 }

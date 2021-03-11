@@ -19,6 +19,12 @@
 }
 
 .list-item h2 {
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 95%;
+  height: 10%;
   font-size: 1.5rem;
   margin: .5rem 0 1rem 0;
   color: rgb(19, 36, 94);

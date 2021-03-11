@@ -1,6 +1,6 @@
 select {
   width: 40%;
-  height: 3rem;
+  height: auto;
   padding: .5rem;
   font-size: 2rem;
   border-radius: 10px;
