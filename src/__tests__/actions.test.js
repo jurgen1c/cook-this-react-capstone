@@ -40,24 +40,24 @@ describe('Redux Actions', () => {
         {
           idMeal: '1',
           strMeal: 'Meal',
-          strMealThumb: 'meal image'
+          strMealThumb: 'meal image',
         },
         {
           idMeal: '2',
           strMeal: 'Meal1',
-          strMealThumb: 'meal image1'
+          strMealThumb: 'meal image1',
         },
       ]);
       expect(action.payload).toStrictEqual([
         {
           idMeal: '1',
           strMeal: 'Meal',
-          strMealThumb: 'meal image'
+          strMealThumb: 'meal image',
         },
         {
           idMeal: '2',
           strMeal: 'Meal1',
-          strMealThumb: 'meal image1'
+          strMealThumb: 'meal image1',
         },
       ]);
       expect(action.type).toBe('SET_RECIPES');
@@ -69,11 +69,11 @@ describe('Redux Actions', () => {
     () => {
       const action = setActiveRecipe({
         strMeal: 'Meal',
-        strArea: 'british'
+        strArea: 'british',
       });
       expect(action.payload).toStrictEqual({
         strMeal: 'Meal',
-        strArea: 'british'
+        strArea: 'british',
       });
       expect(action.type).toBe('SET_ACTIVE');
     },
