@@ -1,0 +1,11 @@
+select {
+  width: 40%;
+  height: 3rem;
+  padding: .5rem;
+  font-size: 2rem;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid gray;
+  color: rgb(60, 100, 231);
+  margin-bottom: 1rem;
+}
