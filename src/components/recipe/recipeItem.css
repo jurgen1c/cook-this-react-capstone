@@ -3,13 +3,14 @@
 }
 
 .recipe-cont h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin: 1rem 0;
   color: rgb(19, 36, 94);
 }
 
 .recipe-header {
   padding: .5rem;
+  height: fit-content;
 }
 
 .recipe-header img {
@@ -23,4 +24,49 @@
   font-size: 2rem;
   display: inline;
   margin: 1rem;
+}
+
+.list-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: fit-content;
+  margin: .5rem 1.5rem;
+}
+
+.list-wrap h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.list-wrap p {
+  font-size: 1.3rem;
+  margin: .5rem;
+  width: 100%;
+}
+
+.inst-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+}
+
+.inst-wrap p {
+  width: 50%;
+  margin: 0 1.5rem;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+
+.inst-wrap a {
+  font-size: 2rem;
+  margin: 1.5rem auto;
+  cursor: pointer;
+}
+
+iframe {
+  width: 35em;
+  height: 20em;
 }

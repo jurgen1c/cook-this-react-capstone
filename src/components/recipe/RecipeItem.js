@@ -23,7 +23,6 @@ const RecipeItem = () => {
     });
     return temp;
   };
-  console.log(recipe);
   return (
     recipe !== null ? (
       <div className="recipe-cont">
@@ -36,11 +35,11 @@ const RecipeItem = () => {
             <div className="flex">
               <div className="list-wrap">
                 <h3>Ingredients</h3>
-                {ingredients().map(item => <p key={item}>{item}</p>)}
+                {ingredients().map(item => <p key={`${item}_ing`}>{item}</p>)}
               </div>
               <div className="list-wrap">
                 <h3>Measurements</h3>
-                {measurements().map(item => <p key={item}>{item}</p>)}
+                {measurements().map(item => <p key={`${item}_measure`}>{item}</p>)}
               </div>
             </div>
           </div>
@@ -48,7 +47,7 @@ const RecipeItem = () => {
         <div className="inst-wrap">
           <iframe src={`https://www.youtube.com/embed/${ytLink()[1]}`} frameBorder="0" title={recipe.strMeal} allowFullScreen />
           <p>{recipe.strInstructions}</p>
-          <a href={recipe.strSource} target="_blank" rel="noreferrer">Source</a>
+          {recipe.strSource ? <a href={recipe.strSource} className="btn">Source</a> : ''}
         </div>
       </div>
     ) : <Loading />
