@@ -38,7 +38,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 - JavaScript
 -	CSS  
 
-### Check out the live version [here](https://react-jcg-calculator.herokuapp.com/ )     
+### Check out the live version [here](https://cook-this-jcg.herokuapp.com/)     
 
 ## 👤 Authors
 
