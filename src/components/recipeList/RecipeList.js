@@ -30,7 +30,7 @@ const RecipeList = () => {
         <CategoryFilter categories={categories} handleChange={handleChange} />
       </div>
       <div className="recipe-list-body">
-        {loaded ? list.map(item => <ListItem key={`${item.strMeal}_${Math.random() * 100}`} meal={item} dispatch={dispatch} />) : <Loading /> }
+        {loaded === true ? list.map(item => <ListItem key={`${item.strMeal}_${Math.random() * 100}`} meal={item} dispatch={dispatch} />) : <Loading /> }
       </div>
     </div>
   );

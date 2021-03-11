@@ -26,7 +26,7 @@ const RecipeItem = () => {
   console.log(recipe);
   return (
     recipe !== null ? (
-      <div>
+      <div className="recipe-cont">
         <h1>{recipe.strMeal}</h1>
         <div className="recipe-header flex">
           <img src={recipe.strMealThumb} alt="" />
@@ -45,8 +45,8 @@ const RecipeItem = () => {
             </div>
           </div>
         </div>
-        <iframe src={`https://www.youtube.com/embed/${ytLink()[1]}`} frameBorder="0" title={recipe.strMeal} allowFullScreen />
         <div>
+          <iframe src={`https://www.youtube.com/embed/${ytLink()[1]}`} frameBorder="0" title={recipe.strMeal} allowFullScreen />
           <p>{recipe.strInstructions}</p>
           <a href={recipe.strSource} target="_blank" rel="noreferrer">Source</a>
         </div>

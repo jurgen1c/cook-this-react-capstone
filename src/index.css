@@ -23,6 +23,16 @@ code {
   display: flex;
 }
 
+.btn {
+  background: rgb(255, 239, 224);
+  border-radius: 10px;
+  padding: .5rem;
+  margin: .5rem 0;
+  text-decoration: none;
+  color: rgb(41, 70, 168);
+  border: 1px solid rgba(60, 100, 231, 0.432);
+}
+
 .recipe-list {
   padding: 1rem 0;
   width: 100%;

@@ -10,10 +10,10 @@ const ListItem = ({ meal, dispatch }) => {
 
   return (
     <div className="list-item">
-      <img src={meal.strMealThumb} alt="meal-thumb" style={{ width: '50px', height: '50px' }} />
+      <img src={meal.strMealThumb} alt="meal-thumb" />
       <div>
         <h2>{meal.strMeal}</h2>
-        <Link to={`/${meal.strMeal.toLowerCase()}`} onClick={handleChoice}> Start Cooking</Link>
+        <Link to={`/${meal.strMeal.toLowerCase()}`} onClick={handleChoice} className="btn"> Start Cooking</Link>
       </div>
     </div>
   );
