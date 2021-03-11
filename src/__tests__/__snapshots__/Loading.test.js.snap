@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Componenet renders correctly 1`] = `
+<div
+  className="loader-cont"
+>
+  <img
+    alt="Loading Gif"
+    className="loader"
+    src="/images/loading.gif"
+  />
+</div>
+`;

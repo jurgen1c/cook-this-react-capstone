@@ -1,15 +1,21 @@
 import getDataFromApi from '../utils/request';
 
-global.fetch = jest.fn(() => 
-  Promise.resolve({
-    json: {}
-  })
-)
+describe('Api communications module', () => {
+  it(
+    '1. Checks the get pokemons method',
+    async () => {
+      const data = await getDataFromApi('https://www.themealdb.com/api/json/v1/1/categories.php');
+      expect(data).toBeInstanceOf(Object);
+      expect(data.categories).toBeInstanceOf(Array);
+    },
+  );
 
-it("gets data", async () => {
-  const data = await getDataFromApi('https://www.themealdb.com/api/json/v1/1/categories.php');
-
-  expect(data).toBe(Object);
-  expect(fetch).toHaveBeenCalledTimes(1);
-  expect(fetch).toHaveBeenCalledWith('https://www.themealdb.com/api/json/v1/1/categories.php')
+  it(
+    '2. Checks the get one pokemon info method',
+    async () => {
+      const data = await getDataFromApi(`https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood`);
+      expect(data).toBeInstanceOf(Object);
+      expect(data.meals).toBeInstanceOf(Array);
+    },
+  );
 });
