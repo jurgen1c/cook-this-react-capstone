@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import filterRecipes, { getRecipes } from '../../actions';
-import CategoryFilter from '../categoryFilter/CategoryFilter';
-import ListItem from '../listItem/ListItem';
-import Loading from '../loading/Loading';
+import CategoryFilter from '../../components/categoryFilter/CategoryFilter';
+import ListItem from '../../components/listItem/ListItem';
+import Loading from '../../components/loading/Loading';
 import './recipeList.css';
 
 const RecipeList = () => {

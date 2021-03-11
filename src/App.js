@@ -4,8 +4,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { getCategories } from './actions';
 import './App.css';
 import Navbar from './components/navbar/Navbar';
-import RecipeItem from './components/recipe/RecipeItem';
-import RecipeList from './components/recipeList/RecipeList';
+import RecipeItem from './containers/recipe/RecipeItem';
+import RecipeList from './containers/recipeList/RecipeList';
 
 function App() {
   const dispatch = useDispatch();
