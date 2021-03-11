@@ -4,8 +4,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { getCategories } from './actions';
 import './App.css';
 import Navbar from './components/navbar/Navbar';
-import Main from './pages/Main';
-import Recipe from './pages/Recipe';
+import RecipeItem from './components/recipe/RecipeItem';
+import RecipeList from './components/recipeList/RecipeList';
 
 function App() {
   const dispatch = useDispatch();
@@ -16,8 +16,8 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Switch>
-        <Route exact path="/" component={Main} />
-        <Route path="/:name" component={Recipe} />
+        <Route exact path="/" component={RecipeList} />
+        <Route path="/:name" component={RecipeItem} />
       </Switch>
     </BrowserRouter>
   );

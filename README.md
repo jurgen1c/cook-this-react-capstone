@@ -1,9 +1,19 @@
 #	PROJECT: React Capstone Catalogue of Recipes
 
+![Heroku](https://pyheroku-badge.herokuapp.com/?app=cook-this-jcg&style=flat)
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/jurgen1c)
+
 
 > This is a Catalogue of Recipes populated using theMealDB API. Users can search recipes by category and go to recipe page where they will find detailed instructions, list of ingredients and measurements, area the recipe originated from and even a video tutorial. Built using React & Redux.
 
 ![Page](./home.png)
+
+> This is tha main page here the user will find a welcome message prompting them to choose a category from select box and below a list of all related recipes will be displayed with an image, the recipe name and a button to see recipe page.
+
+![Page](./recipe1.png)
+![Page](./recipe2.png)
+
+> This is the recipe page here the full recipe info will be displayed. The user can see an image example of complete meal, area & category which it belongs to, list of ingredients & measurements, text instructions and a video tutorial when available.
 
 ## Getting Started
 
