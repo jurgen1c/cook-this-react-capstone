@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Componenet renders correctly 1`] = `
+<select
+  name="categories"
+  onChange={[Function]}
+>
+  <option
+    disabled={true}
+    selected={true}
+  >
+    Select a category
+  </option>
+  <option
+    value="Category"
+  >
+    Category
+  </option>
+  <option
+    value="Category1"
+  >
+    Category1
+  </option>
+</select>
+`;

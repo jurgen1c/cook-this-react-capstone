@@ -1,13 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(255, 239, 224);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    'Courier New',
     monospace;
+}
+
+.flex {
+  display: flex;
+}
+
+.btn {
+  background: rgb(255, 239, 224);
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  text-decoration: none;
+  color: rgb(41, 70, 168);
+  border: 1px solid rgba(60, 100, 231, 0.432);
+}
+
+.special-title {
+  font-size: 1.3rem;
+}
+
+.recipe-list {
+  padding: 1rem 0;
+  width: 100%;
+  background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255)),
+    url('assets/images/background.jpg');
+  background-size: contain;
+  background-position: top;
 }

@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Componenet renders correctly 1`] = `
+Array [
+  <div
+    className="list-item"
+  >
+    <img
+      alt="meal-thumb"
+      src="mealIamageUrl"
+    />
+    <div>
+      <h2>
+        Meal
+      </h2>
+      <a
+        className="btn"
+        href="/meal"
+        onClick={[Function]}
+      >
+         Start Cooking
+      </a>
+    </div>
+  </div>,
+  ",",
+]
+`;
